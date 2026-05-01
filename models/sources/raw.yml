@@ -16,3 +16,21 @@ sources:
             description: Email address.
           - name: created_at
             description: Account creation timestamp (UTC).
+
+      - name: raw_orders
+        description: Orders loaded from CSV via Snowflake user stage.
+        columns:
+          - name: order_id
+            description: Primary key.
+          - name: customer_id
+            description: Foreign key to raw_customers.id.
+          - name: product_name
+            description: Name of the purchased product.
+          - name: quantity
+            description: Number of units ordered.
+          - name: unit_price
+            description: Price per unit at time of order.
+          - name: status
+            description: "Order status: pending, shipped, completed, or cancelled."
+          - name: ordered_at
+            description: Timestamp when the order was placed (UTC).
