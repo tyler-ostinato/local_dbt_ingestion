@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: raw
+    database: "{{ env_var('SNOWFLAKE_DATABASE') }}"
+    schema: "{{ env_var('SNOWFLAKE_SCHEMA') }}"
+    tables:
+      - name: raw_customers
+        description: Customers loaded from CSV via Snowflake user stage.
+        columns:
+          - name: id
+            description: Primary key.
+          - name: name
+            description: Full name.
+          - name: email
+            description: Email address.
+          - name: created_at
+            description: Account creation timestamp (UTC).

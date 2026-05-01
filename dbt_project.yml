@@ -1,0 +1,10 @@
+name: 'dbt_ingestion'
+version: '1.0.0'
+profile: 'snowflake_local'
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
