@@ -10,3 +10,4 @@ snowflake_local:
       database: LOCAL_DBT_INGESTION
       schema: PUBLIC
       threads: 8
+      password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"

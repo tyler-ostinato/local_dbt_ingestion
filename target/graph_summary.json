@@ -1,1 +1,0 @@
-{"_invocation_id": "0c81422b-bec6-4421-92a2-eb822a31cc17", "linked": {"0": {"name": "source.dbt_ingestion.raw.raw_customers", "type": "source", "succ": [1]}, "1": {"name": "model.dbt_ingestion.stg_customers", "type": "model"}}}
