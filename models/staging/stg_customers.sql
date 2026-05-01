@@ -2,7 +2,7 @@ with source as (
     select * from {{ source('raw', 'raw_customers') }}
 ),
 
-renamed as (
+renamed2 as (
     select
         id          as customer_id,
         name        as customer_name,
@@ -11,4 +11,4 @@ renamed as (
     from source
 )
 
-select * from renamed
+select * from renamed2
