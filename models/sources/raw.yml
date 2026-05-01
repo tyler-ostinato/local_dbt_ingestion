@@ -2,8 +2,8 @@ version: 2
 
 sources:
   - name: raw
-    database: "{{ env_var('SNOWFLAKE_DATABASE') }}"
-    schema: "{{ env_var('SNOWFLAKE_SCHEMA') }}"
+    database: "LOCAL_DBT_INGESTION"
+    schema: "PUBLIC"
     tables:
       - name: raw_customers
         description: Customers loaded from CSV via Snowflake user stage.

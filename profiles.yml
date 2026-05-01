@@ -1,0 +1,12 @@
+snowflake_local:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: kfb56964
+      user: TOSTINAT
+      role: ACCOUNTADMIN
+      warehouse: COMPUTE_WH
+      database: LOCAL_DBT_INGESTION
+      schema: PUBLIC
+      threads: 8
